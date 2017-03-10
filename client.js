@@ -5,6 +5,11 @@ $(document).ready(function(){
 
 function appendDOM(){
   $(".container").append("<div class='box'></div>");
+
+  $("container").append("<p>first</p>");
+  $("container").append("<p id='second'>Second</p>");
+  $("container").append("<p>third</p>");
+  $("#second").fadeToggle(5000);
 }
 
 function addEventListeners(){
