@@ -8,11 +8,18 @@ function appendDOM(){
 }
 
 function addEventListeners(){
+  // $(".container").on("mouseover" , ".box" , function(){
+  //   $(this).addClass("highlight");
+  // });
+  //
+  // $(".container").on("mouseout" , ".box" , function(){
+  //   $(this).removeClass("highlight");
+  // });
   $(".container").on("mouseover" , ".box" , function(){
-    $(this).addClass("highlight");
+    $(this).toggleClass("highlight");
   });
 
   $(".container").on("mouseout" , ".box" , function(){
-    $(this).removeClass("highlight");
+    $(this).toggleClass("highlight");
   });
 }
