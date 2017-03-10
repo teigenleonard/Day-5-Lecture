@@ -15,8 +15,11 @@ function appendDOM() {
     // endlessLoop ($("#second"));
     // endlessLoop (".container").children().first();
     // endlessLoop (".container>").chilren().last();
-    $("#second").css("color" , "red");
-
+    $("#second").css("color", "red");
+    $("#second").css({
+        color: "red",
+        fontSize: "26px",
+    });
 }
 
 function endlessLoop(element) {
